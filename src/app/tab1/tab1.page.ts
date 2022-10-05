@@ -7,6 +7,14 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
+  isModalOpen = false;
+  message = 'Reconsidera o desconto de pontos ai ksk 💛'
+
+  setOpen(isOpen: boolean) {
+    this.isModalOpen = isOpen;
+    this.message = this.message;
+  }
+
   constructor() {}
 
 }
